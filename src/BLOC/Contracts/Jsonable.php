@@ -1,6 +1,6 @@
 <?php
 
-namespace TurtleCoin\Contracts;
+namespace BLOC\Contracts;
 
 interface Jsonable
 {

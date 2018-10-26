@@ -2,18 +2,18 @@
 
 namespace Tests;
 
-use TurtleCoin\TurtleCoind;
-use TurtleCoin\TurtleService;
+use BLOC\BLOCd;
+use BLOC\BlocService;
 
-class TurtleServiceRequestTest extends TestCase
+class BlocServiceRequestTest extends TestCase
 {
     // -------------------------------------------
-    // TurtleService
+    // BlocService
     // -------------------------------------------
 
     public function testReset()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->emptyResultResponse(),
                 $this->emptyResultResponse(),
@@ -41,7 +41,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testSave()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->emptyResultResponse(),
                 $this->emptyResultResponse(),
@@ -58,7 +58,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetViewKey()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->getViewKeyResponse(),
                 $this->getViewKeyResponse(),
@@ -78,7 +78,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetSpendKeys()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->getSpendKeysResponse(),
                 $this->getSpendKeysResponse(),
@@ -101,7 +101,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetStatus()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->getStatusResponse(),
                 $this->getStatusResponse(),
@@ -126,7 +126,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetAddresses()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->getAddressesResponse(),
                 $this->getAddressesResponse(),
@@ -151,7 +151,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testCreateAddress()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->createAddressResponse(),
                 $this->createAddressResponse(),
@@ -171,7 +171,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testDeleteAddress()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->emptyResultResponse(),
                 $this->emptyResultResponse(),
@@ -188,7 +188,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetBalance()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->getBalanceResponse(),
                 $this->getBalanceResponse(),
@@ -211,7 +211,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetBlockHashes()
     {
-        $client = new TurtleService([
+        $client = new BlocService([
             'handler' => $this->mockHandler([
                 $this->getBlockHashesResponse(),
                 $this->getBlockHashesResponse(),
@@ -249,12 +249,12 @@ class TurtleServiceRequestTest extends TestCase
     // TODO: test getMnemonicSeed()
 
     // -------------------------------------------
-    // TurtleCoind
+    // BLOCd
     // -------------------------------------------
 
     public function testGetBlockCount()
     {
-        $client = new TurtleCoind([
+        $client = new BLOCd([
             'handler' => $this->mockHandler([
                 $this->getBlockCountResponse(),
                 $this->getBlockCountResponse(),
@@ -279,7 +279,7 @@ class TurtleServiceRequestTest extends TestCase
 
     public function testGetHeight()
     {
-        $client = new TurtleCoind([
+        $client = new BLOCd([
             'handler' => $this->mockHandler([
                 $this->getHeightResponse(),
                 $this->getHeightResponse(),

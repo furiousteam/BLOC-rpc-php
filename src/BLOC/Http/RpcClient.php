@@ -1,6 +1,6 @@
 <?php
 
-namespace TurtleCoin\Http;
+namespace BLOC\Http;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface;

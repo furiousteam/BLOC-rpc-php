@@ -1,10 +1,10 @@
 <?php
 
-namespace TurtleCoin\Http;
+namespace BLOC\Http;
 
 use Psr\Http\Message\ResponseInterface;
-use TurtleCoin\Contracts\Arrayable;
-use TurtleCoin\Contracts\Jsonable;
+use BLOC\Contracts\Arrayable;
+use BLOC\Contracts\Jsonable;
 
 class JsonResponse implements Jsonable, Arrayable
 {

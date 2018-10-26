@@ -1,15 +1,15 @@
 <?php
 
-namespace TurtleCoin;
+namespace BLOC;
 
-use TurtleCoin\Http\JsonResponse;
-use TurtleCoin\Http\RpcClient;
+use BLOC\Http\JsonResponse;
+use BLOC\Http\RpcClient;
 
 /**
- * Wrapper for TurtleCoin's TurtleCoind JSON-RPC interface.
- * @package TurtleCoin
+ * Wrapper for BLOC's BLOCd JSON-RPC interface.
+ * @package BLOC
  */
-class TurtleCoind extends RpcClient
+class BLOCd extends RpcClient
 {
     /** @var int */
     protected $rpcPort = 11898;
@@ -44,7 +44,7 @@ class TurtleCoind extends RpcClient
      * Returns block template with an empty "hole" for nonce.
      *
      * @param int    $reserveSize Size of the reserve to be specified. Required.
-     * @param string $address     Valid TurtleCoin wallet address. Required.
+     * @param string $address     Valid BLOC wallet address. Required.
      * @return JsonResponse
      */
     public function getBlockTemplate(int $reserveSize, string $address):JsonResponse

@@ -1,16 +1,16 @@
 <?php
 
-namespace TurtleCoin;
+namespace BLOC;
 
-use TurtleCoin\Http\JsonResponse;
-use TurtleCoin\Http\RpcClient;
+use BLOC\Http\JsonResponse;
+use BLOC\Http\RpcClient;
 
 /**
- * Class TurtleService
- * Wrapper for TurtleCoin's turtle-service (formerly walletd) JSON-RPC interface.
- * @package TurtleCoin
+ * Class BlocService
+ * Wrapper for BLOC's turtle-service (formerly walletd) JSON-RPC interface.
+ * @package BLOC
  */
-class TurtleService extends RpcClient
+class BlocService extends RpcClient
 {
     /** @var int */
     protected $rpcPort = 8070;

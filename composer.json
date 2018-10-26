@@ -1,8 +1,8 @@
 {
-  "name": "turtlecoin/turtlecoin-rpc-php",
-  "description": "A PHP wrapper for TurtleCoin's RPC interfaces",
+  "name": "bloc/bloc-rpc-php",
+  "description": "A PHP wrapper for BLOC's RPC interfaces",
   "keywords": [
-    "TurtleCoin",
+    "BLOC",
     "PHP"
   ],
   "license": "MIT",
@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "TurtleCoin\\": "src/TurtleCoin"
+      "BLOC\\": "src/BLOC"
     }
   },
   "autoload-dev": {
