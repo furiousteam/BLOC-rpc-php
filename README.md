@@ -77,7 +77,7 @@ $response->getBody();
 
 ## Docs
 
-Documentation of the BLOC RPC API and more PHP examples for this package can be found at [bloc-developer.com](https://bloc-developer.com).
+Documentation of the BLOC RPC API and more PHP examples for this package can be found at [bloc-developer.com](https://bloc-developer.com)
 
 ## License
 
