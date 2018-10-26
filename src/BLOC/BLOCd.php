@@ -12,7 +12,7 @@ use BLOC\Http\RpcClient;
 class BLOCd extends RpcClient
 {
     /** @var int */
-    protected $rpcPort = 11898;
+    protected $rpcPort = 2086;
 
     /** @var string */
     protected $rpcBaseRoute = '/json_rpc';
