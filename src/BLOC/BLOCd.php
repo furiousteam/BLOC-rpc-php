@@ -33,7 +33,7 @@ class BLOCd extends RpcClient
      * @param string $height The height of the block whose previous hash is to be retrieved. Required.
      * @return JsonResponse
      */
-    public function getBlockHash(string $height):JsonResponse
+    public function getBlockHash(int $height):JsonResponse
     {
         $params = [$height];
 
