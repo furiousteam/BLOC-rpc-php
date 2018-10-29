@@ -17,7 +17,7 @@ BLOC RPC PHP is a PHP wrapper for the BLOC JSON-RPC interfaces.
 This package requires PHP >=7.1.3. Require this package with composer:
 
 ```
-composer require bloc/bloc-rpc-php
+composer require furiousteam/bloc-rpc-php
 ```
 
 ## Examples
