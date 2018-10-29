@@ -445,7 +445,7 @@ class BlocService extends RpcClient
 
         if (!is_null($addresses)) $params['addresses'] = $addresses;
 
-        return $this->rpcPost('sendFusionTransaction', $params);
+        return $this->rpcPost('estimateFusion', $params);
     }
 
     /**
